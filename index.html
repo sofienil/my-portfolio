@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofie Nilsson</title>
+
+    <link href="imgs/app.svg" rel="icon"> <!-- favicon -->
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="js/global.js"></script> 
+    <script src="js/home.js"></script>
+    
+    
+  </head>
+  <body>
+    
+
+    <header id="navbar" class="navbar-padding">
+        <div class="logo">
+          <a href="#">Sofie Nilsson</a>
+        </div>
+        <nav class="nav-links">
+          <a id="nav-about" href="#about">About</a>
+          <a id="nav-projects" href="#projects">Projects</a>
+        </nav>
+        <div id="navbar-hamburger" class="hamburger-menu" onclick="toggle_hamburger('mobile-menu', 'navbar-hamburger')">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>   
+    </header>
+
+    <aside class="sticky-top">
+      
+      <div id="mobile-menu" class="hide">
+        <div id="aside-hamburger" class="hamburger-menu" onclick="toggle_hamburger('navbar-hamburger', 'mobile-menu')">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> 
+        <a id="mobile-nav-home" class="active-nav" href="#">Home</a>
+        <a id="mobile-nav-about" href="#about">About</a>
+        <a id="mobile-nav-projects" href="#projects">Projects</a>
+      </div>
+    </aside>
+    
+
+    <!-- Overlay for split animation -->
+    <div class="overlay">
+      <div class="left-half"></div>
+      <div class="right-half"></div>
+    </div>
+
+    <!-- Main content -->
+    <div class="content-center" id="intro">
+      <h1>Welcome to My Portfolio</h1>
+    </div>
+
+    <div id="about">
+      <div id="about-me">
+        <h2 class="centered-text">About me</h2>
+        <div class="about-container">
+          <p class="justify-text">
+            I'm a Computer science student with a master in machine learning. I have experience in C++, C#, Python and Kotlin. Towards web-development I'm knowledgeable in HTML, PHP, CSS, JavaScript and SQL. <br><br>
+            
+            I'm also interested in art and design. I've created logos and artwork by using Adobe XD, Penpot and Krita. Other softwares I have experience in are Blender, Adobe After Effects and a bit of Photoshop.
+          </p>
+        </div>
+      </div>
+    
+      <div id="contacts" class="contacts-flex-direction">
+        <a>
+          <img src = "imgs/mail.svg" alt="Mail icon"/>
+          <p>sofien.j1020@gmail.com</p>
+        </a>
+        <a href="https://www.linkedin.com/in/sofie-nilsson-b30551196/">
+          <img src = "imgs/linkedin.png" alt="LinkedIn icon"/>
+          <p>LinkedIn</p>
+        </a>
+      </div>
+    </div>
+
+    <div id="projects">
+      <h2 id="project-header" class="centered-text">Projects</h2>
+
+      <div class="centered-text" id="portfolio-filters">
+        <li class="filter-item filter-active" data-filter="all">All</li>
+        <li class="filter-item" data-filter="app">App</li>
+        <li class="filter-item" data-filter="web">Web</li>
+        <li class="filter-item" data-filter="design">Design</li>
+      </div>
+
+      <div id="project-list">
+        <script src="js/projects.js"></script>     
+      </div>
+    </div>
+    
+    <footer>
+      <div class="centered-text">
+      Designed and coded by me in visual studio code.<br>
+      © Copyright <strong>Sofie Nilsson</strong>. All rights reserved.
+    </div>
+    </footer>
+  </body>
+</html>

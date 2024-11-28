@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofie Nilsson</title>
+
+    <link href="imgs/app.svg" rel="icon"> <!-- favicon -->
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/project_overview.css">
+    <script src="js/global.js"></script>
+  </head>
+  <body>
+    <header id="navbar" class="navbar-padding">
+        <div class="logo">
+          <a href="index.html">Sofie Nilsson</a>
+        </div>
+    </header>
+
+    <div id="project-overview">
+      <div class="slideshow-container">
+        <div class="arrows prev" onclick="change_slide(-1)">&#10094;</div>
+    
+        <div id="image-container"></div>
+
+        <div class="arrows next" onclick="change_slide(1)">&#10095;</div>      
+      </div>
+    
+      <div id="dots-container"></div>
+
+      <div id="project-overview-text"></div>
+    </div>
+    
+    <footer>
+      <div>Designed and coded by me in visual studio code.</div>
+      <div>© Copyright <strong>Sofie Nilsson</strong>. All rights reserved.</div>
+    </footer>
+
+    <script src="js/project_overview.js"></script>
+  </body>
+</html>
